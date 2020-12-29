@@ -1,0 +1,177 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #3399cc;
+	color: #fff;
+	font-family: 'Varela Round', sans-serif;
+}
+
+
+h1 {
+  font-size: 72px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+input[type="text"] {
+	background: transparent;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	font-family: 'Varela Round', sans-serif;
+	width: 100%;
+	padding: 15px 15px 15px 0;
+	text-indent: 20px;
+	color: #fff;
+	transition: all 0.3s;
+	border-bottom: 1px solid #fff;
+}
+
+input[type="text"]:focus {
+	border-bottom: 1px solid #000;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 820px;
+}
+
+.main-header {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.main-header input {
+	padding-right: 100px;
+}
+
+.buttons {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -15px;
+}
+
+.buttons a {
+	padding-right: 15px;
+	margin-right: 11px;
+	border-right: 1px solid #fff;
+	display: inline-block;
+	transition: all 0.3s;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.buttons a:last-child {
+	padding-right: 0;
+	margin-right: 0;
+	border-right: 0;
+}
+.fa-trash:before {
+    content: "\f1f8";
+}
+.fa-plus:before {
+    content: "\f067";
+}
+.fa {
+    display: inline-block;
+    
+	font-size: 30px;
+	color: #fff;
+	transition: all 0.2s;
+}
+
+.fa:hover {
+	color: #000;
+	transform: scale(1.2);
+}
+
+
+.todo {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.todo li {
+	position: relative;
+	background: #FFFFFF;
+	padding: 1rem;
+	border-radius: 10px;
+	text-align: left;
+    margin-bottom: 20px;
+	font-weight: 600;
+	font-size: 20px;
+	color: #3399cc;
+	padding: 20px 120px 20px 20px;
+	transition: all 0.6s;
+    box-shadow: 0 1px 9px #3399cc;    
+}
+
+ul[contentEditable="true"] {
+    border-radius: 2px solid  #3399cc;
+    box-shadow: none;
+}
+
+.todo .fa {
+	color: #3399cc;
+}
+
+.todo li.fill {
+    text-decoration: line-through;
+    color: #9ad8f7;
+}
+
+.todo li.fill i.fa-check {
+	color: #9ad8f7;
+	transform: scale(1.2);
+}
+
+.todo .fa:hover {
+	color: #000;
+}
+
+.todo .buttons {
+	right: 20px;
+}
+
+.todo .buttons a {
+	border-color: #3399cc;
+}
+
+.count {
+	display: inline-block;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    height: 3em;
+    width: 13em;
+	
+	position: absolute;
+	top: 25%;
+	left: 5%;
+	color: #000;
+    text-align: center;
+}
+
+.remove {
+	background: #fff;
+	
+    height: 3.5em;
+    width: 15.7em;
+
+    border: 2px solid #3399cc;
+    border-radius: 10px;
+    box-shadow: 0 1px 9px #3399cc;   
+    transition: all 0.6s;
+
+	position: absolute;
+	top: 33%;
+	left: 5%;
+	color: #000;
+}

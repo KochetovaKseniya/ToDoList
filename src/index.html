@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <script src="index.js" defer></script>
+
+    <script type="text/javascript" src="https://use.fontawesome.com/ef3486ccf2.js"></script>
+    <link href="https://use.fontawesome.com/ef3486ccf2.css" media="all" rel="stylesheet">
+    
+    <title>ToDoList</title>
+</head>
+<body>
+	<div class="container" id="root">
+		<h1>ToDoList</h1>
+		<header class="main-header">
+			<input type="text" placeholder="What need to be done..." class="field-todo">
+			<div class="buttons">
+				<a href="#" class="add-todo"><i class="fa fa-plus" aria-hidden="true"></i></a>
+				<a href="#" class="clean-value"><i class="fa fa-trash" aria-hidden="true"></i></a>
+			</div>
+		</header>
+		<ul class="todo" contenteditable="true">
+        </ul>
+        <span class="count">0 tasks done</span>
+        <button class="remove" onclick="deleteCount()">Remove checked</button>
+	</div>	
+
+</body>
+</html>
+
